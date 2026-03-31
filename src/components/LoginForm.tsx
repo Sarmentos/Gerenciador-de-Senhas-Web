@@ -15,9 +15,7 @@ export default function LoginForm({ onSave }: Props) {
       alert("Preencha tudo");
       return;
     }
-
-    console.log("clicou salvar", { site, login, senha });
-    console.log("onSave é:", onSave);
+    
     onSave(site, login, senha);
 
     setSite("");
